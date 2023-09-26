@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- font-awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <!-- Silk slider css link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="stytle.css">
+
+
+</head>
+
+<body>
+  <!-- NAVber section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#" id="#home">
+        <img src="images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Blood-Req">Blood Req</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Event">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Unused">Unused item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Health">Health card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donor- page.html">Donor</a>
+          </li>
+        </ul>
+        <a href="login.html" class="btn btn-brand ms-lg-3">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider section -->
+
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="./images/cover_1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+          <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./images/cover_2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+          <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Book a tour</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./images/cover-3.avif" class="d-block w-100 c-img" alt="Slide 3">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+          <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Book a tour</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Event Section -->
+  <div class="container">
+    <div class="heading-title">
+      <h1>OUR EVENT</h1>
+    </div>
+    <div class="row g-3">
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="card shadow-lg h-100">
+          <img src="./images/event1.jpeg" class="card-img-top" alt="A Street in Europe">
+          <div class="card-body">
+            <h5 class="card-title">End</h5>
+            <h5>Awareness Program</h5>
+            <p class="card-text">Smart Blood Donation Management System Jahangirnagar University, Savar, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="card shadow shadow-lg h-100">
+          <img src="./images/event2.jpeg" class="card-img-top" alt="London">
+          <div class="card-body">
+            <h5 class="card-title">End</h5>
+            <h5>Dengue Awareness</h5>
+            <p class="card-text">Introducing Smart Blood Donation Management System (block-D)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <div class="card shadow-lg h-100">
+          <img src="./images/event3.jpeg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">End</h5>
+            <h5>Censer Awareness</h5>
+            <p class="card-text">Introducing Smart Blood Donation Management System (block-D)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card section -->
+
+  <div class="container">
+    <div class="heading-title">
+      <h1>BLOOD REQUEST</h1>
+    </div>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/europe.jpg" class="card-img-top" alt="A Street in Europe">
+          <div class="card-body">
+            <h5 class="card-title">A Street in Europe</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/london.jpg" class="card-img-top" alt="London">
+          <div class="card-body">
+            <h5 class="card-title">London</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/new-york.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/new-york.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Donnar -->
+
+  <div class="container">
+    <div class="heading-title">
+      <h1>TOP DONOR</h1>
+    </div>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/team-img-1.jpg" class="card-img-top" alt="A Street in Europe">
+          <div class="card-body">
+            <h5 class="card-title">A Street in Europe</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/team-img-2.jpg" class="card-img-top" alt="London">
+          <div class="card-body">
+            <h5 class="card-title">London</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/team-img-3.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/team-img-4.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP HOSPITAL -->
+
+  <div class="container">
+    <div class="heading-title">
+      <h1>TOP HOSPITAL</h1>
+    </div>
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/europe.jpg" class="card-img-top" alt="A Street in Europe">
+          <div class="card-body">
+            <h5 class="card-title">A Street in Europe</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/london.jpg" class="card-img-top" alt="London">
+          <div class="card-body">
+            <h5 class="card-title">London</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/new-york.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card shadow-lg">
+          <img src="./images/new-york.jpg" class="card-img-top" alt="New York">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum odio in felis
+              mattis feugiat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- our achievement section -->
+  <div class="container">
+    <div class="heading-title">
+      <h1>OUR ACHIEVEMENT</h1>
+    </div>
+    <div class="row g-3 text-center rounded-5">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg achievement-body">
+          <div class="achievement-icon py-3">
+            <i class="fas fa-street-view"></i>
+          </div>
+          <div class="achievement-text pb-2">
+            <h2>2000+</h2>
+            <h5>Total Volunteer</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg achievement-body">
+          <div class="achievement-icon py-3">
+            <i class="fas fa-praying-hands"></i>
+          </div>
+          <div class="achievement-text pb-2">
+            <h2>1500+</h2>
+            <h5>Total Blood Donor</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg achievement-body">
+          <div class="achievement-icon py-3">
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <div class="achievement-text pb-2">
+            <h2>400+</h2>
+            <h5>Total Successful Event</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg achievement-body">
+          <div class="achievement-icon py-3">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="achievement-text pb-2">
+            <h2>10+</h2>
+            <h5>Total University</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg achievement-body">
+          <div class="achievement-icon py-3">
+            <i class="fas fa-clinic-medical"></i>
+          </div>
+          <div class="achievement-text pb-2">
+            <h2>100+</h2>
+            <h5>Total Hospital</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-lg achievement-body">
+          <div class="achievement-icon py-3">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="achievement-text pb-2">
+            <h2>1500+</h2>
+            <h5>Total Local Blood Group</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testmonial section -->
+
+  <div class="container">
+    <div class="heading-title">
+      <h1>Our Clients Say!</h1>
+    </div>
+    <div class="row g-5 text-center rounded-5 client-slider">
+      
+      <div class="col-12 col-md-12 col-lg-6 mx-3">
+        <div class="card p-4 testmonial-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores at deleniti animi maxime
+            voluptatibus laborum corrupti recusandae eius blanditiis.</p>
+            <div class="testmonial-client-details">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-2">
+                  <img src="images/team-img-1.jpg" alt="">
+                </div>
+                <div class="col-9 col-md-8 col-lg-8 px-5 my-2">
+                  <h3 class="text-start">Clint Name</h3>
+                  <h6 class="text-start">Profession</h6>
+                </div>
+                <div class="col-12 col-md-12 col-lg-2">
+                  <i class="fa fa-quote-right fa-3x mt-3"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-6 mx-3">
+        <div class="card p-4 testmonial-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores at deleniti animi maxime
+            voluptatibus laborum corrupti recusandae eius blanditiis.</p>
+            <div class="testmonial-client-details">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-2">
+                  <img src="images/team-img-1.jpg" alt="">
+                </div>
+                <div class="col-9 col-md-8 col-lg-8 px-5 my-2">
+                  <h3 class="text-start">Clint Name</h3>
+                  <h6 class="text-start">Profession</h6>
+                </div>
+                <div class="col-12 col-md-12 col-lg-2">
+                  <i class="fa fa-quote-right fa-3x mt-3"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-6 mx-3">
+        <div class="card p-4 testmonial-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores at deleniti animi maxime
+            voluptatibus laborum corrupti recusandae eius blanditiis.</p>
+            <div class="testmonial-client-details">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-2">
+                  <img src="images/team-img-1.jpg" alt="">
+                </div>
+                <div class="col-9 col-md-8 col-lg-8 px-5 my-2">
+                  <h3 class="text-start">Clint Name</h3>
+                  <h6 class="text-start">Profession</h6>
+                </div>
+                <div class="col-12 col-md-12 col-lg-2">
+                  <i class="fa fa-quote-right fa-3x mt-3"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-6 mx-3">
+        <div class="card p-4 testmonial-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores at deleniti animi maxime
+            voluptatibus laborum corrupti recusandae eius blanditiis.</p>
+            <div class="testmonial-client-details">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-2">
+                  <img src="images/team-img-1.jpg" alt="">
+                </div>
+                <div class="col-9 col-md-8 col-lg-8 px-5 my-2">
+                  <h3 class="text-start">Clint Name</h3>
+                  <h6 class="text-start">Profession</h6>
+                </div>
+                <div class="col-12 col-md-12 col-lg-2">
+                  <i class="fa fa-quote-right fa-3x mt-3"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Testimonial End -->
+
+  <!-- Our Partners Section -->
+
+  <div class="container">
+    <div class="heading-title">
+      <h1>OUR PARTNERS</h1>
+    </div>
+    <div class="customer-logo slider2">
+      <div class="our-slide">
+        <img src="./partner logo/facebook.png" alt="">
+      </div>
+      <div class="our-slide">
+        <img src="./partner logo/google.png" alt="">
+      </div>
+      <div class="our-slide">
+        <img src="./partner logo/instagram.png" alt="">
+      </div>
+      <div class="our-slide">
+        <img src="./partner logo/nike.png" alt="">
+      </div>
+      <div class="our-slide">
+        <img src="./partner logo/twitter.png" alt="">
+      </div>
+      <div class="our-slide">
+        <img src="./partner logo/uber.png" alt="">
+      </div>
+      <div class="our-slide">
+        <img src="./partner logo/youtube.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+
+  <section class="footer pt-5 mt-5">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-3">
+            <div class="footer-logo pb-4">
+              <img class="footer-main-logo" src="images/logo.png" alt="">
+            </div>
+            <div class="footer-text">
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            </div>
+            <div class="footer-social">
+
+              <ul>
+                <li><span>Follow us:</span></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="fotter-text px-3">
+              <h4>Quick Links</h4>
+              <div class="totter-text-dd">
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Our Performance</a></li>
+                  <li><a href="#">Help (FAQ)</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="fotter-text px-3">
+              <h4>Other Resources</h4>
+              <div class="totter-text-dd">
+                <ul>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Business Loans</a></li>
+                  <li><a href="#">Loan Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="fotter-text px-3">
+              <h4>Contact Us</h4>
+              <div class="footer-contuct-item d-flex">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <a href="https://goo.gl/maps/iM8Quo5HoQ9BJrTx8">6890 Blvd, The Bronx, NY 1058 New York, USA</a>
+              </div>
+              <div class="footer-contuct-item d-flex">
+                <span><i class="far fa-envelope"></i></span>
+                <a href="mailto:hello@finix.com">hello@finix.com</a>
+              </div>
+              <div class="footer-contuct-item d-flex">
+                <span><i class="fas fa-phone-volume"></i></span>
+                <a href="tel:+1(514)312-5678">+1(514)312-5678</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="coppywright-part text-center">
+              <p>Copyright © 2021. Designed By <strong>SAKIL ISLAM</strong> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
